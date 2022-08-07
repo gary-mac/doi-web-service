@@ -14,6 +14,10 @@ public class DoiController {
         this.doiservice = doiservice;
     }
 
+    @RequestMapping("/index")
+    public String index() {
+        return "index";
+    }
     @RequestMapping("/list-all-dois")
     public String findAllDois(Model model) {
         model.addAttribute("data", doiservice.requestAllDois().getBody());
