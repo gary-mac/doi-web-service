@@ -1,11 +1,10 @@
 package com.example.doiwebservice.service;
 
-import com.example.doiwebservice.domain.Root;
+import com.example.doiwebservice.model.Data;
+import org.springframework.http.ResponseEntity;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public interface IDoiService {
-
-    public List<Root> getAllDois();
-
+    public ResponseEntity<ArrayList<Data>> requestAllDois();
 }
