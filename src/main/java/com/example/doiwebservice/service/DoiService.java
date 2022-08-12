@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
+
 @Service
 public class DoiService implements IDoiService {
 
@@ -21,4 +22,5 @@ public class DoiService implements IDoiService {
 		DoiModel obj = restTemplate.getForObject(apiEndpoint + "/dois", DoiModel.class);
         return new ResponseEntity<>(obj.getData(), HttpStatus.OK);
     }
+
 }
