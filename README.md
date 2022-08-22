@@ -23,4 +23,3 @@ Navigate to /doi-web-service from command line within your chosen IDE.
 
 When the project is running enter http://localhost:8080/index into your chosen browser to view the content.
 
-Project board for tracking stories https://trello.com/b/KoELKocb/doi-web-service
